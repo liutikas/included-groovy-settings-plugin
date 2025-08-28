@@ -1,0 +1,17 @@
+plugins {
+    id("java-gradle-plugin")
+    id("groovy")
+}
+
+gradlePlugin {
+    plugins {
+        myPlugin {
+            id = "myPlugin"
+            implementationClass = "androidx.build.MyPlugin"
+        }
+    }
+}
+
+dependencies {
+    implementation(gradleApi())
+}
