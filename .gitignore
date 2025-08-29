@@ -5,3 +5,7 @@
 build
 
 !**/src/**/build
+
+.idea
+
+out/
